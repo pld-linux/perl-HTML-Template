@@ -4,8 +4,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Template
-Summary:	HTML::Template - Perl module to use HTML Templates from CGI scripts
-Summary(pl):	HTML::Template - Obs³uga szablonów HTML w skryptach CGI
+Summary:	HTML::Template - Perl module to use HTML templates from CGI scripts
+Summary(pl):	HTML::Template - modu³ Perla do obs³ugi szablonów HTML w skryptach CGI
 Name:		perl-HTML-Template
 Version:	2.6
 Release:	2
