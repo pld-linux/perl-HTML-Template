@@ -4,9 +4,8 @@
 Summary:	HTML-Template perl module
 Summary(pl):	Modu³ perla HTML-Template
 Name:		perl-HTML-Template
-Version:	2.4
-Release:	3
-
+Version:	2.5
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(cs):	Vývojové prostøedky/Programovací jazyky/Perl
