@@ -8,12 +8,12 @@ Summary:	HTML::Template - Perl module to use HTML Templates from CGI scripts
 Summary(pl):	HTML::Template - Obs³uga szablonów HTML w skryptach CGI
 Name:		perl-HTML-Template
 Version:	2.6
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 URL:		http://html-template.sourceforge.net/
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6.1
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-Digest-MD5
@@ -45,7 +45,8 @@ programu od wygl±du danych.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:TEST_SHARED_MEMORY=1 TEST_FILE_CACHE=1 %{__make} test}
@@ -55,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{perl_sitelib}/%{pdir}/%{pnam}
+install -d $RPM_BUILD_ROOT%{perl_vendorlib}/%{pdir}/%{pnam}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -63,6 +64,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README ANNOUNCE FAQ templates scripts
-%{perl_sitelib}/%{pdir}/*.pm
-%dir %{perl_sitelib}/%{pdir}/%{pnam}
+%{perl_vendorlib}/%{pdir}/*.pm
+%dir %{perl_vendorlib}/%{pdir}/%{pnam}
 %{_mandir}/man3/*
