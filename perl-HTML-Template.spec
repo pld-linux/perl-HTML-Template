@@ -1,11 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Template
-%include	/usr/lib/rpm/macros.perl
 Summary:	HTML-Template perl module
 Summary(pl):	Modu³ perla HTML-Template
 Name:		perl-HTML-Template
 Version:	2.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -24,7 +24,7 @@ oprogramowaniu przy tworzeniu którego zachodzi potrzeba rozdzielenia
 programu od wygl±du danych.
 
 %prep
-%setup -q -n HTML-Template-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
