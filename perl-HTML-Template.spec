@@ -14,7 +14,7 @@ BuildRequires:	perl-IPC-ShareLite
 BuildRequires:	perl-Storable
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 HTML-Template - Perl module to use HTML Templates from CGI scripts.
