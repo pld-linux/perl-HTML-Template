@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Template
-Summary:	HTML-Template perl module
-Summary(pl):	Modu³ perla HTML-Template
+Summary:	HTML::Template perl module
+Summary(pl):	Modu³ perla HTML::Template
 Name:		perl-HTML-Template
 Version:	2.5
 Release:	2
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-HTML-Template - Perl module to use HTML Templates from CGI scripts.
+HTML::Template - Perl module to use HTML Templates from CGI scripts.
 
 %description -l pl
-HTML-Template jest modu³em pozwalaj±cym na wykorzystywanie szablonów
+HTML::Template jest modu³em pozwalaj±cym na wykorzystywanie szablonów
 HTML (i nie tylko) w skryptach CGI (a tak¿e w dowolnym innym
 oprogramowaniu przy tworzeniu którego zachodzi potrzeba rozdzielenia
 programu od wygl±du danych.
