@@ -2,14 +2,16 @@
 Summary:	HTML-Template perl module
 Summary(pl):	Modu³ perla HTML-Template
 Name:		perl-HTML-Template
-Version:	0.95
+Version:	1.4
 Release:	1
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTML/HTML-Template-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl-IPC-ShareLite
+BuildRequires:	perl-Storable
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
