@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	HTML
-%define	pnam	Template
+%define		pdir	HTML
+%define		pnam	Template
 Summary:	HTML::Template - Perl module to use HTML templates from CGI scripts
 Summary(pl):	HTML::Template - modu³ Perla do obs³ugi szablonów HTML w skryptach CGI
 Name:		perl-HTML-Template
