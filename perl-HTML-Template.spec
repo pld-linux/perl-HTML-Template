@@ -2,7 +2,7 @@
 Summary:	HTML-Template perl module
 Summary(pl):	Modu³ perla HTML-Template
 Name:		perl-HTML-Template
-Version:	2.0
+Version:	2.2
 Release:	1
 Copyright:	GPL
 Group:		Development/Languages/Perl
@@ -29,19 +29,11 @@ tworzeniu którego zachodzi potrzeba rozdzielenia programu od wygl±du danych.
 
 %build
 perl Makefile.PL
-make
-make test
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT
-
-(
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/HTML/Template
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist | sort | uniq >.packlist.new
-  mv .packlist.new .packlist
-	
-)
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
         Changes README ANNOUNCE
