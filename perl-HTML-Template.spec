@@ -6,7 +6,7 @@
 %define		pdir	HTML
 %define		pnam	Template
 Summary:	HTML::Template - Perl module to use HTML templates from CGI scripts
-Summary(pl):	HTML::Template - modu≥ Perla do obs≥ugi szablonÛw HTML w skryptach CGI
+Summary(pl.UTF-8):   HTML::Template - modu≈Ç Perla do obs≈Çugi szablon√≥w HTML w skryptach CGI
 Name:		perl-HTML-Template
 Version:	2.8
 Release:	1
@@ -36,11 +36,11 @@ Using this module you fill in the values for the variables, loops and
 branches declared in the template.  This allows you to seperate design -
 the HTML - from the data, which you generate in the Perl script.
 
-%description -l pl
-HTML::Template jest modu≥em pozwalaj±cym na wykorzystywanie szablonÛw
-HTML (i nie tylko) w skryptach CGI (a takøe w dowolnym innym
-oprogramowaniu przy tworzeniu ktÛrego zachodzi potrzeba rozdzielenia
-programu od wygl±du danych.
+%description -l pl.UTF-8
+HTML::Template jest modu≈Çem pozwalajƒÖcym na wykorzystywanie szablon√≥w
+HTML (i nie tylko) w skryptach CGI (a tak≈ºe w dowolnym innym
+oprogramowaniu przy tworzeniu kt√≥rego zachodzi potrzeba rozdzielenia
+programu od wyglƒÖdu danych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
