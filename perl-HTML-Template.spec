@@ -8,12 +8,12 @@
 Summary:	HTML::Template - Perl module to use HTML templates from CGI scripts
 Summary(pl.UTF-8):	HTML::Template - moduł Perla do obsługi szablonów HTML w skryptach CGI
 Name:		perl-HTML-Template
-Version:	2.8
+Version:	2.9
 Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	3f1d6f4b3ab3ef7f0fd8864d2ec56e59
+# Source0-md5:	cbf88a486b36284be55765ac7357c187
 URL:		http://html-template.sourceforge.net/
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
