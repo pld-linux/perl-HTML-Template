@@ -65,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README ANNOUNCE FAQ templates scripts
+%doc Changes README templates scripts
 %{perl_vendorlib}/%{pdir}/*.pm
 %dir %{perl_vendorlib}/%{pdir}/%{pnam}
 %{_mandir}/man3/*
