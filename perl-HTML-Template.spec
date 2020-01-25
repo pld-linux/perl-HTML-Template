@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	HTML
 %define		pnam	Template
 Summary:	HTML::Template - Perl module to use HTML templates from CGI scripts
